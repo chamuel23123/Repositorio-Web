@@ -1,6 +1,6 @@
 # Portafolio Web - Chamuel Herrera 🚀
 
-[![Vistas](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fchamuel23123%2FRepositorio-Web&count_bg=%232563EB&title_bg=%231E1E1E&icon=&icon_color=%23E7E7E7&title=Visitas&edge_flat=false)](https://github.com/chamuel23123/Repositorio-Web)
+![Visitas](https://komarev.com/ghpvc/?username=chamuel23123-portafolio&label=Visitas&color=2563eb&style=flat)
 
 Bienvenido al código fuente de mi portafolio profesional. Este proyecto fue desarrollado para demostrar mis habilidades como Desarrollador Full Stack y Arquitecto Cloud, destacando mi experiencia construyendo sistemas complejos de principio a fin.
 
