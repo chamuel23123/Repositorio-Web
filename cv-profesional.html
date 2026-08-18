@@ -3,332 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Chamuel Herrera</title>
+    <title>CV Chamuel Alexander Herrera Nieves</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-
-        :root {
-            --text-color: #374151;
-            --heading-color: #111827;
-            --accent-color: #2563eb;
-            --accent-light: #eff6ff;
-            --gray-color: #6b7280;
-            --font-main: 'Inter', sans-serif;
+        * { 
+            box-sizing: border-box; 
+            margin: 0; 
+            padding: 0; 
         }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        body {
-            font-family: var(--font-main);
-            color: var(--text-color);
-            line-height: 1.6;
-            background: #e5e7eb;
-            padding: 2rem;
+        
+        body { 
+            font-family: Arial, Helvetica, sans-serif; 
+            background: #ffffff; 
+            color: #000000; 
+            font-size: 10.5pt; 
+            line-height: 1.35; 
         }
-
-        .resume-container {
-            max-width: 850px;
-            margin: 0 auto;
-            background: #ffffff;
-            padding: 0;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        /* Header / Top Banner */
-        header { 
-            background: var(--heading-color); 
-            color: #ffffff; 
-            padding: 2rem 3rem; 
-            position: relative;
+        
+        .header-bar {
+            background-color: #000000;
+            color: #ffffff;
             text-align: center;
-        }
-        
-        /* Blue accent line at the very top */
-        header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 6px;
-            background: var(--accent-color);
+            padding: 15px 0;
+            font-size: 22pt;
+            font-weight: 900;
         }
 
-        .header-content {
-            margin: 0 auto;
+        .main-title {
+            text-align: center;
+            font-size: 16pt;
+            font-weight: bold;
+            margin: 15px 0;
+            text-transform: uppercase;
         }
 
-        h1 { font-size: 2.2rem; font-weight: 800; margin-bottom: 0.25rem; letter-spacing: -0.02em; line-height: 1.1; }
-        .subtitle { font-size: 1.1rem; color: #9ca3af; font-weight: 500; margin-bottom: 1rem; }
-
-        .contact-info { 
-            display: flex; 
-            gap: 0.6rem; 
-            flex-wrap: wrap; 
-            font-size: 0.9rem; 
-            color: #d1d5db; 
-            align-items: center;
-            justify-content: center;
-        }
-        .contact-info a { color: #d1d5db; text-decoration: none; }
-        .contact-info a:hover { color: #ffffff; text-decoration: underline; }
-
-        /* Body Content */
-        .cv-body { padding: 2rem 3rem; }
-
-        section { margin-bottom: 1.5rem; }
-        
-        h2 { 
-            font-size: 1.3rem; 
-            color: var(--heading-color); 
-            text-transform: uppercase; 
-            letter-spacing: 0.05em; 
-            margin-bottom: 1rem; 
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        /* Subtle line after headers */
-        h2::after {
-            content: '';
-            flex: 1;
-            height: 1px;
-            background: #e5e7eb;
-        }
-
-        /* Summary */
-        .summary p { font-size: 0.95rem; }
-
-        /* Experience & Education Items */
-        .item { margin-bottom: 1.2rem; }
-        .item-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.15rem; }
-        .item-title { font-size: 1.1rem; font-weight: 700; color: var(--heading-color); }
-        .item-company { font-size: 0.95rem; font-weight: 600; color: var(--accent-color); margin-bottom: 0.4rem; }
-        .item-date { 
-            font-size: 0.8rem; 
-            color: #4b5563; 
-            font-weight: 600; 
-            background: #e0e7ff; 
-            padding: 0.2rem 0.6rem; 
-            border-radius: 9999px; 
-            color: var(--accent-color);
-        }
-
-        ul.bullet-list { padding-left: 1.2rem; margin: 0; }
-        ul.bullet-list li { margin-bottom: 0.3rem; font-size: 0.95rem; padding-left: 0.2rem; }
-        ul.bullet-list li::marker { color: var(--accent-color); }
-
-        /* Skills */
-        .skills-grid { display: flex; flex-direction: column; gap: 0.8rem; }
-        .skill-category { display: flex; align-items: center; gap: 1rem; }
-        .skill-category-name { font-weight: 700; width: 140px; color: var(--heading-color); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.02em; }
-        .badges { display: flex; flex-wrap: wrap; gap: 0.4rem; flex: 1; }
-        .badge { 
-            background: #f3f4f6; 
-            color: #374151; 
-            padding: 0.2rem 0.6rem; 
-            border-radius: 6px; 
-            font-size: 0.8rem; 
-            font-weight: 600; 
-            border: 1px solid #e5e7eb;
-        }
-
-        /* Education Grid for compactness */
-        .education-grid {
+        .container {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
+            grid-template-columns: 35% 1fr;
+            padding: 0 15px;
+            gap: 15px;
         }
-        .education-grid .item { margin-bottom: 0; }
 
-        /* Print Optimization */
+        .left-col {
+            padding-right: 15px;
+            border-right: 2.5px solid #000000;
+        }
+
+        .right-col {
+            padding-left: 0;
+        }
+
+        h2 {
+            color: #17365d; /* Dark blue for section headings */
+            font-size: 12pt;
+            font-weight: bold;
+            margin-bottom: 8px;
+            margin-top: 15px;
+        }
+
+        .left-col h2:first-child, .right-col h2:first-child { 
+            margin-top: 0; 
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 18px;
+            margin-bottom: 12px;
+        }
+        
+        li {
+            margin-bottom: 4px;
+        }
+
+        .personal-info {
+            list-style-type: disc;
+        }
+
+        .summary-text {
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 11pt;
+            margin-top: 10px;
+        }
+        
+        .job-company {
+            font-weight: bold;
+            font-size: 10.5pt;
+            margin-bottom: 4px;
+        }
+
+        .edu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        
+        .edu-text {
+            padding-right: 10px;
+        }
+        
+        .edu-date {
+            white-space: nowrap;
+            font-size: 9.5pt;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
         @media print {
-            body { 
-                background: none; 
-                padding: 0; 
-                font-size: 0.85rem; 
-                line-height: 1.35; 
-            }
-            .resume-container { 
-                box-shadow: none; 
-                border-radius: 0; 
-                max-width: 100%; 
-                width: 100%; 
-            }
-            header { 
-                padding: 1.5rem 2.5rem; 
-                -webkit-print-color-adjust: exact; 
-                print-color-adjust: exact; 
-            }
-            .cv-body { 
-                padding: 1.5rem 2.5rem; 
-            }
-            h1 { font-size: 2rem; margin-bottom: 0.25rem; }
-            .subtitle { font-size: 1rem; margin-bottom: 0.75rem; }
-            section { margin-bottom: 1rem; page-break-inside: avoid; }
-            h2 { font-size: 1.15rem; margin-bottom: 0.5rem; padding-bottom: 0; }
-            .summary p { font-size: 0.9rem; }
-            .item { margin-bottom: 0.8rem; page-break-inside: avoid; }
-            .item-title { font-size: 0.95rem; }
-            .item-company { margin-bottom: 0.25rem; font-size: 0.85rem; }
-            .item-date { font-size: 0.75rem; padding: 0.15rem 0.5rem; }
-            ul.bullet-list li { margin-bottom: 0.2rem; font-size: 0.85rem; }
-            .skills-grid { gap: 0.5rem; }
-            .skill-category { gap: 0.5rem; }
-            .skill-category-name { width: 120px; font-size: 0.85rem; }
-            .badge { padding: 0.15rem 0.4rem; font-size: 0.75rem; }
-            
-            /* Compact education items to save massive vertical space */
-            .education .item { margin-bottom: 0.4rem; }
+            @page { margin: 0.5cm; }
+            body { padding: 0; margin: 0; font-size: 10pt; }
+            .header-bar { padding: 12px 0; }
+            * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
         }
     </style>
 </head>
 <body>
-
-    <div class="resume-container">
-        
-        <!-- HEADER -->
-        <header>
-            <div class="header-content">
-                <h1>Chamuel Herrera</h1>
-                <div class="subtitle">Ingeniero en Informática · Desarrollador Full Stack</div>
-                <div class="contact-info">
-                    <span>Maracay, Venezuela</span>
-                    <span style="display: inline-block; width: 3px; height: 20px; background-color: #6b7280; border-radius: 2px;"></span>
-                    <span>+58 412-8857141</span>
-                    <span style="display: inline-block; width: 3px; height: 20px; background-color: #6b7280; border-radius: 2px;"></span>
-                    <a href="mailto:hchamuel@gmail.com">hchamuel@gmail.com</a>
-                    <span style="display: inline-block; width: 3px; height: 20px; background-color: #6b7280; border-radius: 2px;"></span>
-                    <a href="https://github.com/chamuel23123">github.com/chamuel23123</a>
-                </div>
-            </div>
-        </header>
-
-        <div class="cv-body">
-
-        <!-- RESUMEN PROFESIONAL -->
-        <section class="summary">
-            <h2>Resumen Profesional</h2>
-            <p>Ingeniero en Informática especializado en el desarrollo de sistemas web y la automatización de procesos. Poseo una mentalidad analítica y gran atención al detalle, lo que me permite transformar necesidades operativas complejas en soluciones tecnológicas eficientes. Busco integrarme a un equipo dinámico donde pueda aportar mi experiencia en PHP (POO) y JavaScript para construir, escalar y optimizar flujos de trabajo digitales.</p>
-        </section>
-
-        <!-- HABILIDADES TÉCNICAS -->
-        <section class="skills">
-            <h2>Habilidades Técnicas</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <span class="skill-category-name">Frontend</span>
-                    <div class="badges">
-                        <span class="badge">HTML5</span>
-                        <span class="badge">CSS3</span>
-                        <span class="badge">JavaScript</span>
-                        <span class="badge">Responsive Design</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <span class="skill-category-name">Backend</span>
-                    <div class="badges">
-                        <span class="badge">PHP</span>
-                        <span class="badge">POO</span>
-                        <span class="badge">Arquitectura de Sistemas</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <span class="skill-category-name">Bases de Datos</span>
-                    <div class="badges">
-                        <span class="badge">MySQL</span>
-                        <span class="badge">Optimización SQL</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <span class="skill-category-name">Infraestructura</span>
-                    <div class="badges">
-                        <span class="badge">Git</span>
-                        <span class="badge">GitHub</span>
-                        <span class="badge">AWS (EC2)</span>
-                        <span class="badge">Vercel</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- EDUCACIÓN -->
-        <section class="education">
-            <h2>Formación Académica</h2>
-            
-            <div class="education-grid">
-                <div class="item">
-                    <div class="item-header">
-                        <span class="item-title">Educación Básica</span>
-                        <span class="item-date"></span>
-                    </div>
-                    <div class="item-company">E.B.N.B "Jacinto Fombona Pachano"</div>
-                </div>
-
-                <div class="item">
-                    <div class="item-header">
-                        <span class="item-title">Bachillerato</span>
-                        <span class="item-date">2014 - 2019</span>
-                    </div>
-                    <div class="item-company">U.E.P "El Precursor"</div>
-                </div>
-
-                <div class="item">
-                    <div class="item-header">
-                        <span class="item-title">TSU en Informática</span>
-                        <span class="item-date">2023 - 2024</span>
-                    </div>
-                    <div class="item-company">Universidad Federico Brito Figueroa</div>
-                </div>
-
-                <div class="item">
-                    <div class="item-header">
-                        <span class="item-title">Ingeniería en Informática</span>
-                        <span class="item-date">2024 - 2026</span>
-                    </div>
-                    <div class="item-company">Universidad Federico Brito Figueroa</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- EXPERIENCIA LABORAL -->
-        <section class="experience">
-            <h2>Experiencia Profesional</h2>
-            
-            <div class="item">
-                <div class="item-header">
-                    <span class="item-title">Desarrollador Full Stack & Arquitecto Cloud</span>
-                    <span class="item-date">2024 - 2026</span>
-                </div>
-                <div class="item-company">Musical Nippon (ERP & E-commerce)</div>
-                <ul class="bullet-list">
-                    <li><strong>Arquitecté e integré</strong> un ecosistema ERP completo sincronizado en tiempo real con una plataforma de e-commerce, automatizando el control de inventarios mediante el método FIFO con zonificación y ventas omnicanal.</li>
-                    <li><strong>Desplegué y optimicé</strong> la infraestructura en la nube utilizando AWS (EC2), garantizando alta disponibilidad y tiempos de respuesta óptimos bajo cargas de trabajo exigentes.</li>
-                    <li><strong>Superé pruebas de estrés</strong> mediante inyección de datos masivos, identificando y resolviendo cuellos de botella en la base de datos para soportar el crecimiento del negocio.</li>
-                </ul>
-            </div>
-
-            <div class="item" style="margin-bottom: 0;">
-                <div class="item-header">
-                    <span class="item-title">Desarrollador Backend & Frontend</span>
-                    <span class="item-date">2021 - 2023</span>
-                </div>
-                <div class="item-company">Dirección General de Salud Ambiental (DGSA)</div>
-                <ul class="bullet-list">
-                    <li><strong>Co-desarrollé</strong> una plataforma institucional centralizada para servidores locales, logrando digitalizar y agilizar las operaciones internas del organismo.</li>
-                    <li><strong>Gestioné y automaticé</strong> flujos de trabajo complejos, implementando un sistema de seguimiento de tickets de soporte técnico y control interdepartamental de equipos tecnológicos.</li>
-                    <li><strong>Optimizé el procesamiento de datos</strong> a nivel de backend, garantizando el manejo fluido y seguro de grandes volúmenes de información institucional.</li>
-                </ul>
-            </div>
-        </section>
-
-        </div> <!-- End cv-body -->
-
+    <div class="header-bar">
+        Chamuel Alexander Herrera Nieves
+    </div>
+    
+    <div class="main-title">
+        SINTESIS CURRICULAR
     </div>
 
+    <div class="container">
+        <!-- LEFT COLUMN -->
+        <div class="left-col">
+            <h2>Informacion Personal</h2>
+            <ul class="personal-info">
+                <li>Cedula de identidad: 31.000.515</li>
+                <li>Lugar y Fecha de nacimiento: Maracay edo.Aragua 18/10/2002</li>
+                <li>Edad: 23</li>
+                <li>Nacionalidad: Venezolano</li>
+                <li>Lugar de residencia: Maracay</li>
+                <li>Número de teléfono: 0412-8857141</li>
+                <li>Correo: hchamuel@gmail.com</li>
+                <li>Github: <a href="https://github.com/chamuel23123">github.com/chamuel23123</a></li>
+            </ul>
+
+            <h2>Resumen Profesional</h2>
+            <div class="summary-text">
+                Ingeniero en Informática especializado en el desarrollo de sistemas web y la automatización de procesos. Poseo una mentalidad analítica y gran atención al detalle, lo que me permite transformar necesidades operativas complejas en soluciones tecnológicas eficientes. Busco integrarme a un equipo dinámico donde pueda aportar mi experiencia en PHP (POO) y JavaScript para construir, escalar y optimizar flujos de trabajo digitales.
+            </div>
+
+            <h2>HABILIDADES TÉCNICAS</h2>
+            <ul>
+                <li>Desarrollo Web: HTML5, CSS.</li>
+                <li>Lenguajes: PHP, JS</li>
+                <li>Datos: MySQl</li>
+                <li>Herramientas: Git, GitHub</li>
+            </ul>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="right-col">
+            <h2>FORMACION ACADEMICA</h2>
+            <ul>
+                <li>
+                    BASICA: "E.B.N.B" Jacinto Fombona Pachano
+                </li>
+                <li class="edu-item">
+                    <span class="edu-text">BACHILLERATO: "U.E.P" El Precursor</span>
+                    <span class="edu-date">2014-2019</span>
+                </li>
+                <li class="edu-item">
+                    <span class="edu-text">Educación Superior: TSU en informática Universidad Federico Brito Figueroa</span>
+                    <span class="edu-date">2023-2024</span>
+                </li>
+                <li class="edu-item">
+                    <span class="edu-text">Educación Superior: Ingeneria en informática Universidad Federico Brito Figueroa</span>
+                    <span class="edu-date">2024-2026</span>
+                </li>
+            </ul>
+
+            <h2>Experiencia Profesional</h2>
+            
+            <div class="job-title">Desarrollador Backend & Frontend 2021 - 2023.</div>
+            <div class="job-company">Dirección General de Salud Ambiental (DGSA):</div>
+            <ul>
+                <li>Co-desarrollé una plataforma institucional centralizada para un servidor local, logrando digitalizar y agilizar las operaciones internas del organismo.</li>
+                <li>Gestión y automatizacion de flujos de trabajo complejos, implementando un sistema de seguimiento de tickets de soporte técnico y control de inventario. Asi como la optimización de procesamientos de grandes volumenes de datos</li>
+            </ul>
+
+            <div class="job-title">Desarrollador Full Stack & Arquitecto Cloud 2024 - 2026</div>
+            <div class="job-company">Musical Nippon (ERP & E-commerce)</div>
+            <ul>
+                <li>Desarrollo e implementacion en la nube de un ecosistema ERP completo sincronizado en tiempo real con una plataforma de e-commerce, automatizando el control de inventarios mediante el método FIFO con zonificación y ventas omnicanal.</li>
+                <li>Despliegue de una infraestructura en la nube utilizando AWS (EC2), garantizando alta disponibilidad y tiempos de respuesta óptimos.</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
