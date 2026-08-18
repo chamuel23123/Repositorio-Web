@@ -148,10 +148,43 @@
 
         /* Print Optimization */
         @media print {
-            body { background: none; padding: 0; }
-            .resume-container { box-shadow: none; border-radius: 0; max-width: 100%; width: 100%; }
-            header { padding: 2rem 3rem; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-            .cv-body { padding: 2rem 3rem; }
+            body { 
+                background: none; 
+                padding: 0; 
+                font-size: 0.85rem; 
+                line-height: 1.35; 
+            }
+            .resume-container { 
+                box-shadow: none; 
+                border-radius: 0; 
+                max-width: 100%; 
+                width: 100%; 
+            }
+            header { 
+                padding: 1.5rem 2.5rem; 
+                -webkit-print-color-adjust: exact; 
+                print-color-adjust: exact; 
+            }
+            .cv-body { 
+                padding: 1.5rem 2.5rem; 
+            }
+            h1 { font-size: 2rem; margin-bottom: 0.25rem; }
+            .subtitle { font-size: 1rem; margin-bottom: 0.75rem; }
+            section { margin-bottom: 1rem; page-break-inside: avoid; }
+            h2 { font-size: 1.15rem; margin-bottom: 0.5rem; padding-bottom: 0; }
+            .summary p { font-size: 0.9rem; }
+            .item { margin-bottom: 0.8rem; page-break-inside: avoid; }
+            .item-title { font-size: 0.95rem; }
+            .item-company { margin-bottom: 0.25rem; font-size: 0.85rem; }
+            .item-date { font-size: 0.75rem; padding: 0.15rem 0.5rem; }
+            ul.bullet-list li { margin-bottom: 0.2rem; font-size: 0.85rem; }
+            .skills-grid { gap: 0.5rem; }
+            .skill-category { gap: 0.5rem; }
+            .skill-category-name { width: 120px; font-size: 0.85rem; }
+            .badge { padding: 0.15rem 0.4rem; font-size: 0.75rem; }
+            
+            /* Compact education items to save massive vertical space */
+            .education .item { margin-bottom: 0.4rem; }
         }
     </style>
 </head>
