@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Chamuel Herrera</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+        :root {
+            --text-color: #374151;
+            --heading-color: #111827;
+            --accent-color: #2563eb;
+            --accent-light: #eff6ff;
+            --gray-color: #6b7280;
+            --font-main: 'Inter', sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font-main);
+            color: var(--text-color);
+            line-height: 1.6;
+            background: #e5e7eb;
+            padding: 2rem;
+        }
+
+        .resume-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 0;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* Header / Top Banner */
+        header { 
+            background: var(--heading-color); 
+            color: #ffffff; 
+            padding: 3rem 4rem; 
+            position: relative;
+        }
+        
+        /* Blue accent line at the very top */
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: var(--accent-color);
+        }
+
+        h1 { font-size: 2.8rem; font-weight: 800; margin-bottom: 0.75rem; letter-spacing: -0.02em; }
+        .subtitle { font-size: 1.2rem; color: #9ca3af; font-weight: 500; margin-bottom: 1.5rem; }
+
+        .contact-info { 
+            display: flex; 
+            gap: 1.5rem; 
+            flex-wrap: wrap; 
+            font-size: 0.95rem; 
+            color: #d1d5db; 
+        }
+        .contact-info a { color: #d1d5db; text-decoration: none; display: flex; align-items: center; gap: 0.3rem; }
+        .contact-info a:hover { color: #ffffff; }
+
+        /* Body Content */
+        .cv-body { padding: 3rem 4rem; }
+
+        /* Sections */
+        section { margin-bottom: 2.5rem; }
+        h2 { 
+            font-size: 1.4rem; 
+            color: var(--accent-color); 
+            font-weight: 700;
+            text-transform: uppercase; 
+            letter-spacing: 0.05em;
+            margin-bottom: 1.25rem; 
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        /* Subtle line after headers */
+        h2::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: #e5e7eb;
+        }
+        
+        .summary p { text-align: justify; font-size: 1.05rem; }
+
+        /* Experience & Education */
+        .item { margin-bottom: 1.75rem; position: relative; }
+        
+        .item-header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: baseline; 
+            margin-bottom: 0.25rem; 
+        }
+        .item-title { font-weight: 700; font-size: 1.15rem; color: var(--heading-color); }
+        .item-date { 
+            font-size: 0.85rem; 
+            color: var(--accent-color); 
+            font-weight: 600; 
+            background: var(--accent-light);
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+        }
+        .item-company { font-weight: 500; color: var(--gray-color); margin-bottom: 0.75rem; }
+        
+        ul.bullet-list { padding-left: 1.25rem; }
+        ul.bullet-list li { margin-bottom: 0.4rem; font-size: 0.95rem; }
+        ul.bullet-list li::marker { color: var(--accent-color); }
+
+        /* Skills Badges */
+        .skills-grid { 
+            display: flex; 
+            flex-direction: column;
+            gap: 1rem; 
+        }
+        .skill-category { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+        .skill-category-name { font-weight: 600; color: var(--heading-color); width: 150px; font-size: 0.95rem;}
+        
+        .badges { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+        .badge {
+            background: #f3f4f6;
+            color: var(--heading-color);
+            padding: 0.3rem 0.8rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            border: 1px solid #e5e7eb;
+        }
+
+        /* Print Optimization */
+        @media print {
+            body { background: none; padding: 0; }
+            .resume-container { box-shadow: none; border-radius: 0; max-width: 100%; width: 100%; }
+            header { padding: 2rem 3rem; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .cv-body { padding: 2rem 3rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-container">
+        
+        <!-- HEADER -->
+        <header>
+            <h1>Chamuel Herrera</h1>
+            <div class="subtitle">Ingeniero en Informática · Desarrollador Full Stack</div>
+            <div class="contact-info">
+                <span>📍 Maracay, Venezuela</span>
+                <span>📱 +58 412-8857141</span>
+                <a href="mailto:hchamuel@gmail.com">✉️ hchamuel@gmail.com</a>
+                <a href="https://github.com/chamuel23123">💻 github.com/chamuel23123</a>
+                <a href="https://repositorio-web-vert.vercel.app/">🌐 Portafolio Web</a>
+            </div>
+        </header>
+
+        <div class="cv-body">
+
+        <!-- RESUMEN PROFESIONAL -->
+        <section class="summary">
+            <h2>Resumen Profesional</h2>
+            <p>Ingeniero en Informática especializado en el desarrollo de sistemas web y la automatización de procesos. Poseo una mentalidad analítica y gran atención al detalle, lo que me permite transformar necesidades operativas complejas en soluciones tecnológicas eficientes. Busco integrarme a un equipo dinámico donde pueda aportar mi experiencia en PHP (POO) y JavaScript para construir, escalar y optimizar flujos de trabajo digitales.</p>
+        </section>
+
+        <!-- HABILIDADES TÉCNICAS -->
+        <section class="skills">
+            <h2>Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <span class="skill-category-name">Frontend</span>
+                    <div class="badges">
+                        <span class="badge">HTML5</span>
+                        <span class="badge">CSS3</span>
+                        <span class="badge">JavaScript</span>
+                        <span class="badge">Responsive Design</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <span class="skill-category-name">Backend</span>
+                    <div class="badges">
+                        <span class="badge">PHP</span>
+                        <span class="badge">POO</span>
+                        <span class="badge">Arquitectura de Sistemas</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <span class="skill-category-name">Bases de Datos</span>
+                    <div class="badges">
+                        <span class="badge">MySQL</span>
+                        <span class="badge">Optimización SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <span class="skill-category-name">Infraestructura</span>
+                    <div class="badges">
+                        <span class="badge">Git</span>
+                        <span class="badge">GitHub</span>
+                        <span class="badge">AWS (EC2)</span>
+                        <span class="badge">Vercel</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCIA LABORAL -->
+        <section class="experience">
+            <h2>Experiencia Profesional</h2>
+            
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Desarrollador de Software Junior</span>
+                    <span class="item-date">2023 - Presente</span>
+                </div>
+                <div class="item-company">Desarrollo de Aplicaciones Web e Intranet</div>
+                <ul class="bullet-list">
+                    <li>Desarrollo y diseño de aplicaciones web y plataformas de intranet corporativa desde cero utilizando arquitectura PHP Orientada a Objetos.</li>
+                    <li>Mantenimiento proactivo y refactorización de código existente para mejorar el rendimiento de la plataforma y la escalabilidad del sistema.</li>
+                    <li>Realización de pruebas exhaustivas de eficiencia, validación de integridad de datos y corrección oportuna de errores de software.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Pasante de Programación</span>
+                    <span class="item-date">2023 - 2024</span>
+                </div>
+                <div class="item-company">Desarrollo Backend y Optimización de Procesos</div>
+                <ul class="bullet-list">
+                    <li>Diseño y desarrollo de módulos específicos para la intranet corporativa, mejorando sustancialmente la interfaz de usuario (UI) y la experiencia de navegación (UX).</li>
+                    <li>Automatización exitosa de múltiples procesos administrativos manuales, reduciendo la carga operativa del equipo.</li>
+                    <li>Optimización de consultas SQL complejas en bases de datos MySQL, acelerando el tiempo de respuesta general del sistema y la página web.</li>
+                    <li>Despliegue y mantenimiento técnico de aplicaciones web en servidores de producción en vivo.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- EDUCACIÓN -->
+        <section class="education">
+            <h2>Formación Académica</h2>
+            
+            <div class="item" style="margin-bottom: 0;">
+                <div class="item-header">
+                    <span class="item-title">Ingeniería en Informática (TSU)</span>
+                    <span class="item-date">2023 - 2024</span>
+                </div>
+                <div class="item-company">Universidad Politécnica Territorial del Estado Aragua "Federico Brito Figueroa"</div>
+            </div>
+        </section>
+
+        </div> <!-- End cv-body -->
+
+    </div>
+
+</body>
+</html>
