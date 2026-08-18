@@ -1,6 +1,6 @@
 # Portafolio Web - Chamuel Herrera 🚀
 
-![Visitas](https://komarev.com/ghpvc/?username=chamuel23123-portafolio&label=Visitas&color=2563eb&style=flat)
+![Visitas](https://hits.sh/repositorio-web-vert.vercel.app.svg?label=Visitas&color=2563eb&labelColor=1e1e1e)
 
 Bienvenido al código fuente de mi portafolio profesional. Este proyecto fue desarrollado para demostrar mis habilidades como Desarrollador Full Stack y Arquitecto Cloud, destacando mi experiencia construyendo sistemas complejos de principio a fin.
 
