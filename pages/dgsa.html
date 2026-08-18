@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema DGSA | Caso de Estudio - Chamuel Herrera</title>
+    <meta name="description" content="Detalle del desarrollo del Sistema DGSA: plataforma institucional para la Dirección General de Salud Ambiental con portal público e Intranet privada.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <!-- ========== NAVEGACIÓN COMPARTIDA ========== -->
+    <div id="shared-nav"></div>
+
+    <!-- ========== HERO ========== -->
+    <header class="detail-hero">
+        <div class="container">
+            <div class="hero-project-grid">
+                <div class="hero-project-content fade-in">
+                    <div class="hero-badge fade-in">Intranet Institucional • Caso de Estudio</div>
+                    <h1>Sistema DGSA</h1>
+                    <p class="detail-tagline">
+                        Plataforma institucional para la Dirección General de Salud Ambiental. Integra un portal público informativo y una Intranet privada. Desarrollado (2021-2023) para un entorno de servidor local On-Premise y entregado al departamento de informática para su implantación.
+                    </p>
+                    <div class="detail-tags">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>jQuery</span>
+                        <span>DataTables</span>
+                        <span>Chart.js</span>
+                        <span>FPDF</span>
+                        <span>jQuery UI</span>
+                    </div>
+                </div>
+                <div class="hero-project-image fade-in">
+                    <img src="../assets/dgsa-hero.jpg" alt="Sistema DGSA" class="hero-perspective-img dgsa-hero-img">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== MÓDULO 1: PORTAL PÚBLICO ========== -->
+    <section class="module-section fade-in">
+        <div class="container">
+            <div class="module-row">
+                <div class="module-text">
+                    <div class="module-number">01</div>
+                    <h2>Portal Público Institucional</h2>
+                    <p>
+                        Sitio web público orientado a la ciudadanía. Actúa como el canal de difusión oficial de la institución.
+                    </p>
+                    <ul class="module-features">
+                        <li>Presentación de la estructura organizativa en Direcciones y Coordinaciones</li>
+                        <li>Repositorio de instrumentos legales y normativas</li>
+                        <li>Publicación de boletines informativos</li>
+                        <li>Galería multimedia dinámica</li>
+                    </ul>
+                </div>
+                <div class="module-image">
+                    <div class="image-showcase">
+                        <div class="showcase-main">
+                            <img src="../assets/dgsa-cms-hero.jpg" alt="Portal Público Institucional">
+                        </div>
+                        <div class="showcase-thumbs">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MÓDULO 2: CENTRO DE SOPORTE ========== -->
+    <section class="module-section fade-in">
+        <div class="container">
+            <div class="module-row reverse">
+                <div class="module-text">
+                    <div class="module-number">02</div>
+                    <h2>Centro de Soporte Técnico</h2>
+                    <p>
+                        Sistema de mesa de ayuda interno para los funcionarios de la institución.
+                    </p>
+                    <ul class="module-features">
+                        <li>Creación y seguimiento de tickets de soporte técnico con estados Pendiente, En Proceso y Finalizado</li>
+                        <li>Base de conocimiento integrada para resolución rápida de problemas comunes</li>
+                        <li>Asignación de tickets a técnicos especializados</li>
+                    </ul>
+                </div>
+                <div class="module-image">
+                    <div class="image-showcase">
+                        <div class="showcase-main">
+                            <img src="../assets/dgsa-soporte-hero.jpg" alt="Sistema de Soporte Técnico">
+                        </div>
+                        <div class="showcase-thumbs">
+                            <img src="../assets/soporte.JPG" alt="Miniatura Soporte Técnico 1">
+                            <img src="../assets/soporte2.JPG" alt="Miniatura Soporte Técnico 2">
+                            <img src="../assets/soporte3.JPG" alt="Miniatura Soporte Técnico 3">
+                            <img src="../assets/soporte4.JPG" alt="Miniatura Soporte Técnico 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MÓDULO 3: PARQUE TECNOLÓGICO ========== -->
+    <section class="module-section fade-in">
+        <div class="container">
+            <div class="module-row">
+                <div class="module-text">
+                    <div class="module-number">03</div>
+                    <h2>Parque Tecnológico</h2>
+                    <p>
+                        Sistema de control de inventario de hardware y equipos informáticos de la institución.
+                    </p>
+                    <div class="module-impact">
+                        <p><strong>Problema:</strong> Control de todo el inventario de hardware de la institución se llevaba manualmente en papel y archivos aislados, haciendo imposible la auditoría rápida y aumetando la pérdida de información.</p>
+                        <p><strong>Solución:</strong> Digitalización total del inventario e implementación de DataTables, procesando las consultas pesadas directamente en la base de datos.</p>
+                        <p><strong>Resultado:</strong> Manejo fluido de grandes cantidades de datos centralizados con tiempos de respuesta de milisegundos, permitiendo auditorías de hardware en tiempo real.</p>
+                    </div>
+                    <ul class="module-features">
+                        <li>Registro detallado de especificaciones técnicas incluyendo CPU, RAM, direcciones MAC e IP y Discos Duros</li>
+                        <li>Trazabilidad de equipos mediante jerarquía de ubicación por Dirección, División y Departamento</li>
+                        <li>Control de periféricos asignados como monitores, teclados y reguladores</li>
+                        <li>Tablas de datos masivos con búsqueda en tiempo real usando DataTables</li>
+                    </ul>
+                </div>
+                <div class="module-image">
+                    <div class="image-showcase">
+                        <div class="showcase-main">
+                            <img src="../assets/dgsa-inv-hero.jpg" alt="Gestión de Parque Tecnológico">
+                        </div>
+                        <div class="showcase-thumbs">
+                            <img src="../assets/inv-tecnologico.JPG" alt="Miniatura Parque Tecnológico 1">
+                            <img src="../assets/inv-tecnologico2.JPG" alt="Miniatura Parque Tecnológico 2">
+                            <img src="../assets/inv-tecnologico3.JPG" alt="Miniatura Parque Tecnológico 3">
+                            <img src="../assets/inv-tecnologico4.JPG" alt="Miniatura Parque Tecnológico 4">
+                            <img src="../assets/inv-tecnologico5.JPG" alt="Miniatura Parque Tecnológico 5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MÓDULO 4: CORRESPONDENCIA ========== -->
+    <section class="module-section fade-in">
+        <div class="container">
+            <div class="module-row reverse">
+                <div class="module-text">
+                    <div class="module-number">04</div>
+                    <h2>Gestión de Correspondencia</h2>
+                    <p>
+                        Flujo digital para la recepción y derivación de documentos institucionales entre departamentos.
+                    </p>
+                    <div class="module-impact">
+                        <p><strong>Propósito:</strong> Notificar proactivamente a las distintas direcciones sobre la correspondencia entrante o enviada. El sistema alerta si los documentos fueron enviados a su oficina o si el personal debe dirigirse al departamento de correspondencia a retirarlos físicamente, agilizando el flujo de información.</p>
+                    </div>
+                    <ul class="module-features">
+                        <li>Registro de oficios entrantes asociados a empresas o instituciones externas</li>
+                        <li>Sistema de notificaciones automáticas para los Jefes de División destino</li>
+                        <li>Flujo de confirmación de recepción de documentos en físico</li>
+                        <li>Generación de reportes PDF utilizando la librería FPDF</li>
+                    </ul>
+                </div>
+                <div class="module-image">
+                    <div class="image-showcase">
+                        <div class="showcase-main">
+                            <img src="../assets/correspondencia.jpg" alt="Gestión de Correspondencia">
+                        </div>
+                        <div class="showcase-thumbs">
+                            <img src="../assets/correspondencia2.jpg" alt="Miniatura Correspondencia 1">
+                            <img src="../assets/correspondencia3.jpg" alt="Miniatura Correspondencia 2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MÓDULO 5: GESTIÓN DEL SISTEMA ========== -->
+    <section class="module-section fade-in">
+        <div class="container">
+            <div class="module-row">
+                <div class="module-text">
+                    <div class="module-number">05</div>
+                    <h2>Gestión del Sistema & Auditoría</h2>
+                    <p>
+                        Panel de administración global y seguridad de la Intranet.
+                    </p>
+                    <ul class="module-features">
+                        <li>Gestión de usuarios y control de acceso basado en roles jerárquicos</li>
+                        <li>Historial de auditoría completo con registro detallado de cada acción, inserción o cambio realizado por cualquier usuario</li>
+                        <li>Módulo de recuperación de credenciales y preguntas de seguridad</li>
+                    </ul>
+                </div>
+                <div class="module-image">
+                    <div class="image-showcase">
+                        <div class="showcase-main">
+                            <img src="../assets/gestion-del-sistema.JPG" alt="Gestión del Sistema & Auditoría">
+                        </div>
+                        <div class="showcase-thumbs">
+                            <img src="../assets/gestion-del-sistema2.JPG" alt="Miniatura Gestión del Sistema">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MÓDULO 6: GESTIÓN WEB ========== -->
+    <section class="module-section fade-in">
+        <div class="container">
+            <div class="module-row reverse">
+                <div class="module-text">
+                    <div class="module-number">06</div>
+                    <h2>Panel de Control Web</h2>
+                    <p>
+                        Sistema de Gestión de Contenidos integrado que alimenta dinámicamente el Portal Público.
+                    </p>
+                    <ul class="module-features">
+                        <li>Interfaz administrativa para cargar nuevos boletines y noticias</li>
+                        <li>Gestión de la galería de imágenes y documentos descargables</li>
+                        <li>Actualización de la información institucional en tiempo real sin tocar código</li>
+                    </ul>
+                </div>
+                <div class="module-image">
+                    <div class="image-showcase">
+                        <div class="showcase-main">
+                            <img src="../assets/web-dgsa.JPG" alt="Panel de Control Web">
+                        </div>
+                        <div class="showcase-thumbs">
+                            <img src="../assets/web-dgsa2.JPG" alt="Miniatura Panel de Control Web 1">
+                            <img src="../assets/web-dgsa3.JPG" alt="Miniatura Panel de Control Web 2">
+                            <img src="../assets/web-dgsa4.JPG" alt="Miniatura Panel de Control Web 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA RETORNO ========== -->
+    <section class="detail-cta fade-in">
+        <div class="container">
+            <h2>¿Interesado en este proyecto?</h2>
+            <p>Conoce más sobre mi trabajo o explora otros casos de estudio en mi portafolio.</p>
+            <div class="cta-buttons-group">
+                <a href="https://wa.me/584128857141?text=Hola%20Chamuel,%20vengo%20de%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20contactarte." target="_blank" class="btn btn-primary">
+                    <span>Contactar por WhatsApp</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                </a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hchamuel@gmail.com&su=Contacto%20desde%20Portafolio" target="_blank" class="btn btn-secondary">
+                    <span>Enviar Correo</span>
+                </a>
+                <a href="../index.html#proyectos" class="btn btn-ghost">
+                    Volver al Portafolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="../index.html" class="footer-logo">CH<span class="logo-dot">.</span></a>
+                <p class="footer-tagline">Ingeniero en Informática · Desarrollador Full Stack especializado en crear soluciones web robustas y escalables.</p>
+            </div>
+            <div class="footer-nav">
+                <h4 class="footer-heading">Navegación</h4>
+                <ul>
+                    <li><a href="../index.html#inicio">Inicio</a></li>
+                    <li><a href="../index.html#habilidades">Habilidades</a></li>
+                    <li><a href="../index.html#proyectos">Proyectos</a></li>
+                    <li><a href="../index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-projects">
+                <h4 class="footer-heading">Proyectos</h4>
+                <ul>
+                    <li><a href="musical-nippon.html">Musical Nippon (ERP)</a></li>
+                    <li><a href="nippon-web.html">Musical Nippon Web</a></li>
+                    <li><a href="dgsa.html">Sistema DGSA</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p class="footer-copy">&copy; <span id="year"></span> Chamuel Herrera. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Botón Volver Arriba -->
+    <button class="scroll-top-btn" aria-label="Volver arriba">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </button>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

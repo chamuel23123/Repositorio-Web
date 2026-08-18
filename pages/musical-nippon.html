@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Musical Nippon - Plataforma integral (ERP) para la gestión administrativa de un negocio musical desarrollada por Chamuel Herrera.">
+    <title>Musical Nippon - ERP para Negocio Musical | Chamuel Herrera</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <!-- ========== NAVEGACIÓN COMPARTIDA ========== -->
+    <div id="shared-nav"></div>
+
+    <!-- Detail Hero -->
+    <header class="detail-hero fade-in">
+        <div class="container">
+            <div class="hero-project-grid">
+                <div class="hero-project-content">
+                    <span class="hero-badge">Caso de Estudio • Sistema ERP</span>
+                    <h1>Musical Nippon</h1>
+                    <p class="detail-tagline">Plataforma integral (ERP) para la gestión administrativa de un negocio musical. Diseñado para optimizar cada proceso operativo, desde la venta hasta el control de inventario.</p>
+                    <div class="detail-tags">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>Cloudinary API</span>
+                        <span>PHPMailer</span>
+                        <span>FPDF</span>
+                        <span>AWS EC2</span>
+                    </div>
+                </div>
+                <div class="hero-project-image">
+                    <img src="../assets/musical-nippon-hero.jpg" alt="Musical Nippon ERP" class="hero-perspective-img erp-hero-img">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content: Modules -->
+    <main class="detail-modules">
+
+        <!-- Módulo 1 -->
+        <section class="module-section fade-in" id="modulo-ventas">
+            <div class="container">
+                <div class="module-row">
+                    <div class="module-text">
+                        <div class="module-number">01</div>
+                        <h2>Ventas Omnicanal (Físicas y Web)</h2>
+                        <p>Módulo completo de punto de venta que permite gestionar transacciones tanto en el establecimiento físico como a través del portal web. Ambos canales están sincronizados en tiempo real para mantener la coherencia del inventario y la facturación.</p>
+                        <div class="module-impact">
+                            <p><strong>Problema:</strong> Las ventas físicas y web estaban desincronizadas, generando "overselling" (venta de productos sin stock).</p>
+                            <p><strong>Solución:</strong> Unificación en un canal omnicanal con sincronización de base de datos en tiempo real.</p>
+                            <p><strong>Resultado:</strong> Eliminación del 100% de las discrepancias de inventario y reducción drástica de errores manuales.</p>
+                        </div>
+                        <ul class="module-features">
+                            <li>Registro de ventas en mostrador y en línea</li>
+                            <li>Facturación electrónica integrada</li>
+                            <li>Historial completo de transacciones por cliente</li>
+                            <li>Sincronización en tiempo real entre canales</li>
+                        </ul>
+                    </div>
+                    <div class="module-image">
+                        <div class="image-showcase">
+                            <div class="showcase-main">
+                                <img src="../assets/ventas.JPG" alt="Módulo de Ventas Musical Nippon">
+                            </div>
+                            <div class="showcase-thumbs">
+                                <img src="../assets/ventas-2.JPG" alt="Detalle del Módulo de Ventas">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Módulo 2 -->
+        <section class="module-section fade-in" id="modulo-compras">
+            <div class="container">
+                <div class="module-row reverse">
+                    <div class="module-text">
+                        <div class="module-number">02</div>
+                        <h2>Gestión de Compras y Recepción</h2>
+                        <p>Control total del ciclo de compras: desde la generación del pedido al proveedor hasta la recepción física de los productos en el almacén. En este punto se gestiona la merma de recepción — si la cantidad recibida es menor a la solicitada, el sistema registra automáticamente los faltantes.</p>
+                        <ul class="module-features">
+                            <li>Registro de proveedores y condiciones comerciales</li>
+                            <li>Órdenes de compra con seguimiento de estado completo</li>
+                            <li>Recepción de mercancía con control de merma (faltantes)</li>
+                            <li>Vinculación automática entre compra recibida e inventario</li>
+                        </ul>
+                    </div>
+                    <div class="module-image">
+                        <div class="image-showcase">
+                            <div class="showcase-main">
+                                <img src="../assets/compras.JPG" alt="Módulo de Compras Musical Nippon">
+                            </div>
+                            <div class="showcase-thumbs">
+                                <img src="../assets/compras2.JPG" alt="Detalle de Compras 1">
+                                <img src="../assets/compras-3.JPG" alt="Detalle de Compras 2">
+                                <img src="../assets/compras-4.jpg" alt="Detalle de Compras 3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Módulo 3 -->
+        <section class="module-section fade-in" id="modulo-inventario">
+            <div class="container">
+                <div class="module-row">
+                    <div class="module-text">
+                        <div class="module-number">03</div>
+                        <h2>Inventario Avanzado (FIFO) y Gestión de Almacenes</h2>
+                        <p>Sistema de control de inventario basado en el método FIFO, garantizando la correcta rotación de productos. Incluye gestión de múltiples almacenes divididos por zonas, con control de capacidad por ubicación (Zonificación) para optimizar el espacio y la logística interna.</p>
+                        <div class="module-impact">
+                            <p><strong>Problema:</strong> Pérdida de valor por productos antiguos no rotados y logística interna desorganizada.</p>
+                            <p><strong>Solución:</strong> Implementación del metodo FIFO y control volumétrico atraves Zonificación.</p>
+                            <p><strong>Resultado:</strong> Trazabilidad exacta de cada producto, reducción de productos obsoletos y optimizacion del proceso de inventario.</p>
+                        </div>
+                        <ul class="module-features">
+                            <li>Método de valoración FIFO </li>
+                            <li>Gestión de almacenes y zonas con capacidad por ubicación </li>
+                            <li>Control de cantidad de productos asignados a cada zona del almacén</li>
+                        </ul>
+                    </div>
+                    <div class="module-image">
+                        <div class="image-showcase">
+                            <div class="showcase-main">
+                                <img src="../assets/inventario.JPG" alt="Módulo de Inventario">
+                            </div>
+                            <div class="showcase-thumbs">
+                                <img src="../assets/inventario2.JPG" alt="Kardex 1">
+                                <img src="../assets/inventario3.JPG" alt="Kardex 2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Módulo 4 -->
+        <section class="module-section fade-in" id="modulo-marketing">
+            <div class="container">
+                <div class="module-row reverse">
+                    <div class="module-text">
+                        <div class="module-number">04</div>
+                        <h2>Marketing: Promociones, Ofertas y Creación de Posts</h2>
+                        <p>Panel de marketing integrado que permite crear y gestionar promociones, ofertas temporales y publicaciones (posts) que se reflejan automáticamente en el portal web público de la empresa.</p>
+                        <ul class="module-features">
+                            <li>Creación de promociones con fechas de vigencia</li>
+                            <li>Ofertas especiales sincronizadas con la pagina web</li>
+                            <li>Editor de posts y contenido para las publicaciones de los productos en la pagina web</li>
+                            <li>Gestión y optimización de imágenes con Cloudinary</li>
+                        </ul>
+                    </div>
+                    <div class="module-image">
+                        <div class="image-showcase">
+                            <div class="showcase-main">
+                                <img src="../assets/marketing.JPG" alt="Panel de Marketing">
+                            </div>
+                            <div class="showcase-thumbs">
+                                <img src="../assets/marketing2.JPG" alt="Detalle Marketing 1">
+                                <img src="../assets/marketing3.JPG" alt="Detalle Marketing 2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Módulo 5 -->
+        <section class="module-section fade-in" id="modulo-reportes">
+            <div class="container">
+                <div class="module-row">
+                    <div class="module-text">
+                        <div class="module-number">05</div>
+                        <h2>Generador de Reportes</h2>
+                        <p>Motor de reportes gerenciales que permite a la administración tomar decisiones basadas en datos reales. Genera documentos PDF profesionales con tablas detalladas para todas las áreas del negocio.</p>
+                        <ul class="module-features">
+                            <li>Reportes de Ventas (Web, por clientes y por empleados)</li>
+                            <li>Reportes de Compras y Movimientos de Entrada & Salida</li>
+                            <li>Análisis de Productos (Más vendidos, más comprados y disponibilidad)</li>
+                            <li>Exportación en formato PDF profesional con FPDF</li>
+                        </ul>
+                    </div>
+                    <div class="module-image">
+                        <div class="image-showcase">
+                            <div class="showcase-main">
+                                <img src="../assets/reporte.JPG" alt="Generador de Reportes">
+                            </div>
+                            <div class="showcase-thumbs">
+                                <img src="../assets/reporte2.JPG" alt="Detalle Reportes 1">
+                                <img src="../assets/reporte-3.JPG" alt="Detalle Reportes 2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Módulo 6 -->
+        <section class="module-section fade-in" id="modulo-aws">
+            <div class="container">
+                <div class="module-row reverse">
+                    <div class="module-text">
+                        <div class="module-number">06</div>
+                        <h2>Despliegue en la Nube (AWS) y Pruebas de Estrés</h2>
+                        <p>Toda la plataforma fue desplegada en producción utilizando instancias EC2 de Amazon Web Services, incluyendo la vinculación de dominios reales. Durante la fase de pruebas, se inyectaron masivamente más de 9,000 registros para auditar el rendimiento estructural.</p>
+                        <div class="module-impact">
+                            <p><strong>Problema:</strong> Riesgo de caída del sistema y tiempos de respuesta degradados ante un uso intensivo inesperado.</p>
+                            <p><strong>Solución:</strong> Ejecución de pruebas de estrés, identificando y corrigiendo cuellos de botella en la capa de persistencia y servidor.</p>
+                            <p><strong>Resultado:</strong> El sistema procesó la carga masiva sin colapsos, garantizando tiempos de respuesta óptimos bajo condiciones de alta concurrencia.</p>
+                        </div>
+                        <ul class="module-features">
+                            <li>Instancia EC2 con servidor Apache/Linux</li>
+                            <li>Configuración de protocolos de seguridad y red</li>
+                            <li>Dominio personalizado vinculado al servidor</li>
+                            <li>Arquitectura resiliente testeada bajo estrés</li>
+                        </ul>
+                    </div>
+                    <div class="module-image">
+                        <div class="mock-terminal">
+                            <div class="mock-terminal-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                                <span class="title">ec2-user@ip-172-31-45-8:~</span>
+                            </div>
+                            <div class="mock-terminal-body">
+                                <p><span class="prompt">$</span> ab -n 9000 -c 100 https://musical-nippon.com/api/sync</p>
+                                <p class="output">Benchmarking musical-nippon.com (be patient)</p>
+                                <p class="output warning">Completed 1000 requests...</p>
+                                <p class="output warning">Completed 5000 requests...</p>
+                                <p class="output success">Completed 9000 requests</p>
+                                <p class="output" style="margin-top: 0.5rem">Time taken for tests:&nbsp;&nbsp; 12.450 seconds</p>
+                                <p class="output">Failed requests:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="success">0</span></p>
+                                <p class="output">Requests per second:&nbsp;&nbsp; <span class="success">722.89 [#/sec]</span></p>
+                                <p><span class="prompt">$</span><span class="cursor"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Módulo 7 -->
+        <section class="module-section fade-in" id="modulo-seguridad">
+            <div class="container">
+                <div class="module-row">
+                    <div class="module-text">
+                        <div class="module-number">07</div>
+                        <h2>Seguridad y Administración</h2>
+                        <p>El sistema cuenta con sólidas medidas de seguridad y control administrativo. Permite gestionar quién tiene acceso a qué áreas del sistema y mantiene un registro detallado de las acciones críticas para garantizar la integridad de los datos.</p>
+                        <ul class="module-features">
+                            <li>Gestión de Usuarios con control de acceso basado en roles (RBAC)</li>
+                            <li>Encriptación de contraseñas y credenciales de acceso (bcrypt)</li>
+                            <li>Validación y sanitización estricta de datos de entrada (Prevención XSS)</li>
+                            <li>Protección contra Inyección SQL mediante Sentencias Preparadas (PDO)</li>
+                            <li>Auditoría completa de acciones y respaldos de base de datos</li>
+                        </ul>
+                    </div>
+                    <div class="module-image">
+                        <div class="mock-terminal">
+                            <div class="mock-terminal-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                                <span class="title">admin@musical-nippon:~</span>
+                            </div>
+                            <div class="mock-terminal-body">
+                                <p><span class="prompt">root@erp:~$</span> tail -f /var/log/auth.log</p>
+                                <p class="output success">[OK] User 'admin' authenticated via bcrypt.</p>
+                                <p class="output">[INFO] RBAC: Granted full access to module 'Ventas'.</p>
+                                <p class="output warning">[WARN] Blocked SQLi attempt from IP 192.168.1.45</p>
+                                <p class="output success">[OK] Data sanitization complete. No XSS detected.</p>
+                                <p><span class="prompt">root@erp:~$</span><span class="cursor"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Back to portfolio CTA -->
+    <section class="detail-cta fade-in">
+        <div class="container">
+            <h2>¿Interesado en conocer más detalles sobre este proyecto?</h2>
+            <p>Explora otros proyectos en mi portafolio o contáctame para conversar sobre posibles colaboraciones.</p>
+            <div class="cta-buttons-group">
+                <a href="https://wa.me/584128857141?text=Hola%20Chamuel,%20vengo%20de%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20contactarte." target="_blank" class="btn btn-primary">
+                    <span>Contactar por WhatsApp</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                </a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hchamuel@gmail.com&su=Contacto%20desde%20Portafolio" target="_blank" class="btn btn-secondary">
+                    <span>Enviar Correo</span>
+                </a>
+                <a href="../index.html#proyectos" class="btn btn-ghost">
+                    Volver al Portafolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="../index.html" class="footer-logo">CH<span class="logo-dot">.</span></a>
+                <p class="footer-tagline">Ingeniero en Informática · Desarrollador Full Stack especializado en crear soluciones web robustas y escalables.</p>
+            </div>
+            <div class="footer-nav">
+                <h4 class="footer-heading">Navegación</h4>
+                <ul>
+                    <li><a href="../index.html#inicio">Inicio</a></li>
+                    <li><a href="../index.html#habilidades">Habilidades</a></li>
+                    <li><a href="../index.html#proyectos">Proyectos</a></li>
+                    <li><a href="../index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-projects">
+                <h4 class="footer-heading">Proyectos</h4>
+                <ul>
+                    <li><a href="musical-nippon.html">Musical Nippon (ERP)</a></li>
+                    <li><a href="nippon-web.html">Musical Nippon Web</a></li>
+                    <li><a href="dgsa.html">Sistema DGSA</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p class="footer-copy">&copy; <span id="year"></span> Chamuel Herrera. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Botón Volver Arriba -->
+    <button class="scroll-top-btn" aria-label="Volver arriba">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+</body>
+</html>
