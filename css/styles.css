@@ -82,13 +82,13 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #cbd5e1;
+    background-color: var(--accent);
     border-radius: 10px;
     border: 3px solid var(--bg-primary);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #94a3b8;
+    background-color: var(--accent-hover);
 }
 
 a { text-decoration: none; color: inherit; }
